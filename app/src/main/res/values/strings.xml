@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">Smart Property Kiosk</string>
+    <string name="screensaver">Touch the Screen to Start</string>
+    <string name="welcome_to">Welcome To:</string>
+    <string name="dial_code">Dial Code</string>
+    <string name="pin_code">PIN Code</string>
+    <string name="search_placeholder">Search by name or code</string>
+    <string name="name">Name</string>
+    <string name="code">Code</string>
+    <string name="back_to_directory">Back to\nDirectory</string>
+    <string name="pin_message">Please Enter Here Your PIN Code To Get Access:</string>
+    <string name="get_access">Get Access</string>
+    <string name="dial_message">Please Enter Dial Code:</string>
+    <string name="calling">Calling...</string>
+    <string name="access_denied">Access Denied</string>
+    <string name="valid_pin">Please Enter Valid PIN Code.</string>
+    <string name="access_granted">Access Granted.</string>
+    <string name="door_unlocked">Door Unlocked. Please Enter.</string>
+    <string name="dial_code_does_not">Dial Code does not exist.</string>
+    <string name="please_try_again">Please try again.</string>
+    <string name="ringing">Ringing...</string>
+    <string name="duration">"Duration: "</string>
+    <string name="hanging_up">"Hanging Up "</string>
+
+</resources>

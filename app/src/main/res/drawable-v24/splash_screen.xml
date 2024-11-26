@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+<!--    <item android:drawable="@color/gray" />-->
+    <item
+        android:drawable="@drawable/ic_kiosk_white"
+        android:gravity="center"/>
+<!--    <item-->
+<!--        android:drawable="@mipmap/connect_plus_white"-->
+<!--        android:gravity="center">-->
+<!--        <scale-->
+<!--            android:scaleWidth="50%"-->
+<!--            android:scaleHeight="50%"></scale>-->
+<!--    </item>-->
+<!--    <item-->
+<!--        android:bottom="64dp"-->
+<!--        android:drawable="@mipmap/condoplex"-->
+<!--        android:gravity="bottom|center_horizontal" />-->
+</layer-list>

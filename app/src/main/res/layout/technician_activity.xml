@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/version_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/serial_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/version_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="150dp"
+        android:autofillHints=""
+        android:inputType="number"
+        android:padding="14dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/wiegand_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/header_btn_shape"
+        android:enabled="true"
+        android:padding="10dp"
+        android:text="Test Wiegand"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:theme="@style/ThemeOverlay.Custom.Button.getAccessBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_input" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiegand_test">
+
+        <Button
+            android:id="@+id/relay_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/header_btn_shape"
+            android:text="Relay 1" />
+
+        <Button
+            android:id="@+id/relay_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/header_btn_shape"
+            android:text="Relay 2" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#77777777"
+        android:enabled="true"
+        android:padding="10dp"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relay_ll" />
+
+    <Button
+        android:id="@+id/reboot_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#77777777"
+        android:enabled="true"
+        android:padding="10dp"
+        android:text="Reboot Device"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/done_btn" />
+
+    <Button
+        android:id="@+id/reset_adb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#77777777"
+        android:enabled="true"
+        android:padding="10dp"
+        android:text="Reset ADB"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reboot_btn" />
+
+    <Button
+        android:id="@+id/reset_server_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#77777777"
+        android:enabled="true"
+        android:padding="10dp"
+        android:text="Reset Server Connection"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_adb" />
+
+    <Button
+        android:id="@+id/open_startool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#77777777"
+        android:enabled="true"
+        android:padding="10dp"
+        android:text="Open StarTool app"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_server_connection" />
+
+    <LinearLayout
+        android:id="@+id/update_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/serial_number">
+
+        <TextView
+            android:id="@+id/update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Available:"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:enabled="true"
+            android:padding="10dp"
+            android:text="Update"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

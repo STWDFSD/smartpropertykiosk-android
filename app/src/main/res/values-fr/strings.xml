@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screensaver">Touchez l\'écran pour démarrer</string>
+    <string name="welcome_to">"Bienvenue au: "</string>
+    <string name="dial_code">Code D\'dial</string>
+    <string name="pin_code">Code PIN</string>
+    <string name="search_placeholder">Recherche par Nom ou Code</string>
+    <string name="name">Nom</string>
+    <string name="code">Code</string>
+    <string name="back_to_directory">Retour à\nAnnuaire</string>
+    <string name="pin_message">Pour y acceder, veuillez saisir ici votre code PIN:</string>
+    <string name="get_access">Accéder</string>
+    <string name="dial_message">Veuillez saisir le code d\'dial:</string>
+    <string name="calling">Appel</string>
+    <string name="access_denied">Accès refusé</string>
+    <string name="valid_pin">Veuillez saisir un code PIN valide.</string>
+    <string name="access_granted">Accès autorisé.</string>
+    <string name="door_unlocked">Porte déverrouillée.\\nVeuillez entrer.</string>
+    <string name="dial_code_does_not">Le code de composition n\'existe pas.</string>
+    <string name="please_try_again">Veuillez réessayer.</string>
+    <string name="ringing">Sonnerie...</string>
+    <string name="duration">"Durée: "</string>
+    <string name="hanging_up">"Appel Terminé "</string>
+</resources>
